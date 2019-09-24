@@ -1,4 +1,4 @@
-# Arolo Template Parser
+# Arlo Template Parser
 
 This project is the Arlo Practical Test written in JS with Jest as the Testing Engine.
 
@@ -19,14 +19,12 @@ npm install
 ```
 
 ## Development
-----------------
 You are recommended to open the project by Visual Studio Code (https://code.visualstudio.com/).
 
 You can view the implmenaton detail and test the apply() function locally with Code Runner (https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) installed in your VS Code.
 
 
 ## Testing
-----------------
 In the project root directory, run:
 ```
 npm run test
