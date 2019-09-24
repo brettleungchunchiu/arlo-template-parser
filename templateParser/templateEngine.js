@@ -25,17 +25,12 @@ const apply = (template = '', dataSource = {}) => {
                     dataFieldPath.push(blockTokens[1])
                 } else if (blockTokens.length === 1 && blockTokens[0] === `/${BLOCK_TAG}`) {
                     dataFieldPath.pop()
-                    if (blockTokens[0] === `/${BLOCK_TAG}`) {
-                        dataFieldPath.pop()
-                    } else {
-                        result += getDataByPath(dataSource, [...dataFieldPath, ...blockTokens[0].split('.')])
-                    }
                 } else if (blockTokens.length > 0) {
                     const data = getDataByPath(dataSource, [...dataFieldPath, ...blockTokens[0].split('.')])
                     const dateFormat = (blockString.match(/"/g) || []).length === 2 ? blockString.split(/"/)[1] : null
                     result += data instanceof moment ? data.format(dateFormat) : data
                 } else {
-                    throw `Empty Block`
+                    throw `Invliad Block`
                 }
                 i = endBlockIndex
             } else {
