@@ -30,7 +30,7 @@ const apply = (template = '', dataSource = {}) => {
                     const dateFormat = (blockString.match(/"/g) || []).length === 2 ? blockString.split(/"/)[1] : null
                     result += data instanceof moment ? data.format(dateFormat) : data
                 } else {
-                    throw `Invliad Block`
+                    throw `Invalid Block`
                 }
                 i = endBlockIndex
             } else {
