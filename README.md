@@ -21,7 +21,7 @@ npm install
 ## Development
 You are recommended to open and develop the project by Visual Studio Code (https://code.visualstudio.com/).
 
-You can view the implmenaton detail and test the apply() function in the IDE with Code Runner (https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) installed.
+You can view the implmenaton detail and test the apply() function in the IDE console with Code Runner (https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) installed.
 
 
 ## Testing
